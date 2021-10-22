@@ -13,4 +13,17 @@
             "Description": "Name of the sample Amazon S3 bucket."
         }
     }
+    {
+  "Type" : "AWS::EC2::VPC",
+  "Properties" : {
+      "CidrBlock" : 11.0.0.0/16,
+      "EnableDnsHostnames" : true,
+      "EnableDnsSupport" : true,
+      "InstanceTenancy" : dedicated,
+    "Tags" : [ 
+         {"Key" : "stack", "Value" : "production"} 
+      ]
+      
+    }
+}
 }
