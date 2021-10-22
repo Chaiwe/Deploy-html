@@ -9,7 +9,7 @@ Resources:
         Properties:
           VpcId: !Ref PubPrivateVPC
           AvailabilityZone: ap-south-1a
-          CidrBlock: 172.31.1.0/24
+          CidrBlock: 162.31.1.0/24
           MapPublicIpOnLaunch: true
      
       PublicSubnet2:
@@ -17,7 +17,7 @@ Resources:
         Properties:
           VpcId: !Ref PubPrivateVPC
           AvailabilityZone: ap-south-1b
-          CidrBlock: 172.31.2.0/24
+          CidrBlock: 162.31.2.0/24
           MapPublicIpOnLaunch: true
      
       PrivateSubnet1:
@@ -25,7 +25,7 @@ Resources:
         Properties:
           VpcId: !Ref PubPrivateVPC
           AvailabilityZone: ap-south-1a
-          CidrBlock: 172.31.3.0/24
+          CidrBlock: 162.31.3.0/24
           MapPublicIpOnLaunch: false
      
       PrivateSubnet2:
@@ -33,7 +33,7 @@ Resources:
         Properties:
           VpcId: !Ref PubPrivateVPC
           AvailabilityZone: ap-south-1b
-          CidrBlock: 172.31.4.0/24
+          CidrBlock: 162.31.4.0/24
           MapPublicIpOnLaunch: false
      
       
